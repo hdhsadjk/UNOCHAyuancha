@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075b53">
+  <title>UNOCHA 風格活動資訊頁</title>
+  <meta name="description" content="品牌形象展示與活動資訊頁面。">
+  <style>
+    :root {
+      --green: #075b53;
+      --cream: #f8f1e6;
+      --brown: #593719;
+      --text: #28342d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC",
+        "Microsoft JhengHei", sans-serif;
+    }
+    .page { width: 100%; max-width: 900px; margin: 0 auto; padding: 16px; }
+    .hero {
+      display: block; width: 100%; height: auto;
+      border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,.08);
+    }
+    .intro { text-align: center; padding: 25px 8px 28px; }
+    .eyebrow { color: var(--green); font-size: 12px; letter-spacing: 3px; margin: 0 0 9px; }
+    h1 { color: var(--green); font-size: clamp(23px, 5vw, 34px); margin: 0 0 10px; }
+    .description { margin: 0; color: #68665e; font-size: 15px; line-height: 1.8; }
+    .offer {
+      background: #fffdf8; padding: 16px; border-radius: 20px;
+      box-shadow: 0 6px 24px rgba(65,45,20,.08);
+    }
+    .label {
+      display: inline-block; margin: 0 0 14px; padding: 7px 12px;
+      border-radius: 30px; background: #f1e4d1; color: var(--brown);
+      font-size: 13px; font-weight: 700;
+    }
+    .offer-link { display: block; overflow: hidden; border-radius: 14px; }
+    .offer-image { display: block; width: 100%; height: auto; }
+    .claim-button {
+      display: block; margin-top: 16px; padding: 16px 20px;
+      border-radius: 12px; background: var(--green); color: white;
+      text-align: center; text-decoration: none; font-size: 17px; font-weight: 700;
+    }
+    .claim-button:hover { background: #064840; }
+    .hint { text-align: center; color: #77736b; font-size: 12px; line-height: 1.8; margin: 12px 0 0; }
+    footer { padding: 22px 8px 8px; text-align: center; color: #77736b; font-size: 12px; line-height: 1.9; }
+    @media (max-width: 480px) {
+      .page { padding: 10px; }
+      .hero { border-radius: 12px; }
+      .intro { padding: 22px 4px; }
+      .offer { padding: 10px; border-radius: 16px; }
+      .claim-button { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section aria-label="品牌形象">
+      <img class="hero" src="brand-intro.jpg" alt="UNOCHA 品牌形象開場圖" fetchpriority="high">
+      <div class="intro">
+        <p class="eyebrow">BRAND &amp; TEA</p>
+        <h1>品牌形象與活動資訊</h1>
+        <p class="description">瀏覽下方活動圖片，點擊圖片或按鈕前往 LINE 查看相關資訊。</p>
+      </div>
+    </section>
+
+    <section class="offer" id="offer" aria-label="活動資訊">
+      <div class="label">活動資訊</div>
+      <a class="offer-link" href="https://lin.ee/80wAWru" target="_blank" rel="noopener noreferrer"
+         aria-label="前往 LINE 查看活動資訊">
+        <img class="offer-image" src="coupon-100.png" alt="飲品活動圖片，點擊查看活動資訊" loading="lazy">
+      </a>
+      <a class="claim-button" href="https://lin.ee/80wAWru" target="_blank" rel="noopener noreferrer">
+        前往 LINE 查看活動資訊 →
+      </a>
+      <p class="hint">點擊上方圖片或按鈕，即可前往 LINE。實際活動內容及適用條件以連結頁面資訊為準。</p>
+    </section>
+
+    <footer>
+      <p>本頁為自製活動資訊展示頁，並非品牌官方網站，亦不代表與相關品牌具有官方隸屬或授權關係。</p>
+      <p>前往外部連結前，請自行確認帳號身分及活動條件。</p>
+    </footer>
+  </main>
+</body>
+</html>
